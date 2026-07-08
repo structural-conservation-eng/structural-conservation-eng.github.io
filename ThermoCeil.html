@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       PRIMARY SEO METADATA
+       ============================================================ -->
+  <title>ThermoCeil — Infrared Thermography for Historic Fibrous Plaster Ceilings</title>
+  <meta name="description" content="ThermoCeil applies infrared thermography to non-invasively assess the historic fibrous plaster ceilings of the Royal Albert Hall, via E-RIHS ERIC access.">
+  <meta name="keywords" content="fibrous plaster, infrared thermography, HRIRT, structural conservation, heritage science, Royal Albert Hall, E-RIHS, non-destructive testing, historic buildings, University of Bath">
+  <meta name="author" content="Alejandro Jiménez Rios, University of Bath">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0F2436">
+  <link rel="canonical" href="https://structural-conservation-eng.github.io/ThermoCeil.html">
+
+  <!-- ============================================================
+       OPEN GRAPH / FACEBOOK
+       ============================================================ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://structural-conservation-eng.github.io/ThermoCeil.html">
+  <meta property="og:title" content="ThermoCeil — Infrared Thermography for Historic Fibrous Plaster Ceilings">
+  <meta property="og:description" content="Testing high-resolution infrared thermography as a non-invasive diagnostic tool for the historic fibrous plaster ceilings of the Royal Albert Hall.">
+  <meta property="og:image" content="https://structural-conservation-eng.github.io/images/thermoceil-og-cover.jpg">
+
+  <!-- ============================================================
+       TWITTER / X CARD
+       ============================================================ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ThermoCeil — Infrared Thermography for Historic Fibrous Plaster Ceilings">
+  <meta name="twitter:description" content="Testing high-resolution infrared thermography as a non-invasive diagnostic tool for the historic fibrous plaster ceilings of the Royal Albert Hall.">
+  <meta name="twitter:image" content="https://structural-conservation-eng.github.io/images/thermoceil-og-cover.jpg">
+
+  <!-- Favicon placeholder — replace /images/favicon.svg once branding assets are ready -->
+  <link rel="icon" type="image/svg+xml" href="images/thermoceil-favicon.svg">
+
+  <!-- Fonts: Fraunces (display serif) for headings, Inter (sans) for body, IBM Plex Mono for data/labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="ThermoCeil.css">
+
+  <!-- ============================================================
+       STRUCTURED DATA (schema.org) — helps search engines understand
+       this page as a research project rather than a generic page.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchProject",
+    "name": "ThermoCeil",
+    "alternateName": "High-Resolution Infrared Thermography for Structural Assessment of Historic Fibrous Plaster Ceilings at the Royal Albert Hall",
+    "description": "A pilot study testing High-Resolution Infrared Thermography (HRIRT) as a non-invasive method for assessing historic fibrous plaster ceilings, using the Royal Albert Hall as a case study.",
+    "url": "https://structural-conservation-eng.github.io/ThermoCeil.html",
+    "funder": {
+      "@type": "Organization",
+      "name": "E-RIHS ERIC — European Research Infrastructure for Heritage Science"
+    },
+    "member": [
+      {
+        "@type": "Person",
+        "name": "Alejandro Jiménez Rios",
+        "jobTitle": "Principal Investigator",
+        "affiliation": "University of Bath"
+      },
+      {
+        "@type": "Person",
+        "name": "Richard Ball",
+        "jobTitle": "Co-Investigator",
+        "affiliation": "University of Bath"
+      },
+      {
+        "@type": "Person",
+        "name": "Robert Frostick",
+        "jobTitle": "Industry Collaborator",
+        "affiliation": "Conisbee"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       SKIP LINK (accessibility)
+       ============================================================ -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" class="nav__brand">ThermoCeil</a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#home" class="nav__link" data-nav-link>Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav-link>About</a></li>
+        <li><a href="#participants" class="nav__link" data-nav-link>Participants</a></li>
+        <li><a href="#news" class="nav__link" data-nav-link>News</a></li>
+        <li><a href="#publications" class="nav__link" data-nav-link>Publications</a></li>
+        <li><a href="#contact" class="nav__link" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         1. HERO
+         ============================================================ -->
+    <section class="hero" id="home">
+      <div class="hero__scan" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__kicker">E-RIHS Heritage Science Access Project</p>
+        <h1 class="hero__title">ThermoCeil</h1>
+        <p class="hero__subtitle">
+          High-Resolution Infrared Thermography for Structural Assessment of Historic
+          Fibrous Plaster Ceilings at the Royal Albert Hall
+        </p>
+
+        <div class="hero__meta">
+          <span class="hero__badge">Funded through E-RIHS ERIC — 1st Call, Autumn 2025</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#about" class="btn btn--primary">Explore the project</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-indicator__line"></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         2. ABOUT
+         ============================================================ -->
+    <section class="section about" id="about">
+      <div class="section__inner">
+        <p class="section__eyebrow">About the project</p>
+        <h2 class="section__title">Seeing what the eye cannot</h2>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <h3>Overview</h3>
+            <p>
+              The Royal Albert Hall's auditorium ceiling is finished in fibrous plaster —
+              a lightweight composite of gypsum, hessian and timber that became widespread
+              in the late nineteenth century. Its structural components are hidden from
+              view, and current inspection relies on invasive, labour-intensive methods
+              constrained by access and safety. ThermoCeil tests High-Resolution Infrared
+              Thermography (HRIRT), accessed through the E-RIHS MOLAB platform, as a
+              non-invasive alternative for revealing concealed construction and early
+              deterioration.
+            </p>
+
+            <h3>Motivation &amp; challenge</h3>
+            <p>
+              Hessian wads, timber laths and thickness variations sit behind a finished
+              plaster surface, prone to ageing, moisture ingress and detachment. Left
+              undetected, these issues can lead to cracking, delamination or collapse.
+              Conventional endoscopic surveys and opening-up works are slow, disruptive
+              and often restricted by height or hazardous materials.
+            </p>
+
+            <h3>Methodology</h3>
+            <p>
+              A five-day campaign combines HRIRT imaging with a LiDAR survey for spatial
+              context and Portable Nuclear Magnetic Resonance Relaxometry (PNMRR) for
+              moisture validation. Thermal data is processed through filtering, transient
+              analysis and Principal Component Analysis, then overlaid on the LiDAR model
+              to distinguish genuine anomalies from expected construction features.
+            </p>
+
+            <h3>Expected impact</h3>
+            <p>
+              ThermoCeil aims to establish a transferable protocol for rapid, repeatable,
+              non-invasive ceiling surveys — reducing reliance on scaffolding and mobile
+              platforms, and improving safety and evidence-based conservation decisions
+              for theatres and heritage buildings across the UK and Europe.
+            </p>
+          </div>
+
+          <div class="about__facts" aria-label="Project facts">
+            <div class="fact-card reveal">
+              <span class="fact-card__value">5 days</span>
+              <span class="fact-card__label">On-site acquisition campaign</span>
+            </div>
+            <div class="fact-card reveal">
+              <span class="fact-card__value">~10 m²</span>
+              <span class="fact-card__label">Ceiling area surveyed</span>
+            </div>
+            <div class="fact-card reveal">
+              <span class="fact-card__value">Grade I</span>
+              <span class="fact-card__label">Listed heritage venue</span>
+            </div>
+            <div class="fact-card reveal">
+              <span class="fact-card__value">2</span>
+              <span class="fact-card__label">MOLAB diagnostic techniques</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. PARTICIPANTS
+         ============================================================ -->
+    <section class="section participants" id="participants">
+      <div class="section__inner">
+        <p class="section__eyebrow">Who's involved</p>
+        <h2 class="section__title">Participants &amp; partners</h2>
+
+        <!-- To add a new participant, duplicate one <article class="person-card reveal"> block -->
+        <div class="person-grid">
+
+          <article class="person-card reveal">
+            <div class="person-card__photo person-card__photo--placeholder" aria-hidden="true">AJR</div>
+            <h3 class="person-card__name">Alejandro Jiménez Rios</h3>
+            <p class="person-card__role">Principal Investigator</p>
+            <p class="person-card__affiliation">Lecturer in Structural Engineering &amp; History, Conservation and Management Cluster Leader, University of Bath</p>
+            <p class="person-card__bio">
+              Structural engineer specialising in conservation of historic and monumental
+              structures, with a research background spanning masonry mechanics, fibrous
+              plaster and non-destructive assessment methods.
+            </p>
+            <div class="person-card__links">
+              <a href="https://researchportal.bath.ac.uk/en/persons/alejandro-jimenez-rios" target="_blank" rel="noopener noreferrer">Research profile<span class="visually-hidden"> (opens in new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="person-card reveal">
+            <div class="person-card__photo person-card__photo--placeholder" aria-hidden="true">RB</div>
+            <h3 class="person-card__name">Richard Ball</h3>
+            <p class="person-card__role">Co-Investigator</p>
+            <p class="person-card__affiliation">Materials Scientist, University of Bath</p>
+            <p class="person-card__bio">
+              Specialist in the characterisation, conservation and performance of
+              construction materials, applying Raman spectroscopy, FTIR, XRD, SEM and
+              computed tomography to heritage applications.
+            </p>
+            <div class="person-card__links">
+              <a href="#contact">Contact via project</a>
+            </div>
+          </article>
+
+          <article class="person-card reveal">
+            <div class="person-card__photo person-card__photo--placeholder" aria-hidden="true">RF</div>
+            <h3 class="person-card__name">Robert Frostick</h3>
+            <p class="person-card__role">Industry Collaborator</p>
+            <p class="person-card__affiliation">Associate, Conisbee</p>
+            <p class="person-card__bio">
+              MEng MSc MIStructE CEng, Conservation Accredited Engineer (CARE), with
+              extensive expertise in the conservation of the Royal Albert Hall.
+            </p>
+            <div class="person-card__links">
+              <a href="https://www.conisbee.co.uk/" target="_blank" rel="noopener noreferrer">Conisbee<span class="visually-hidden"> (opens in new tab)</span></a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Partner organisations strip -->
+        <div class="partners">
+          <p class="partners__label" id="partners-label">Partner &amp; collaborating organisations</p>
+          <ul class="partners__list" role="list" aria-labelledby="partners-label">
+            <li>University of Bath</li>
+            <li>CNR ISPC — HerMatScienceLab</li>
+            <li>Conisbee</li>
+            <li>Royal Albert Hall</li>
+            <li>Historic England</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. NEWS
+         ============================================================ -->
+    <section class="section news" id="news">
+      <div class="section__inner">
+        <p class="section__eyebrow">Latest updates</p>
+        <h2 class="section__title">News</h2>
+
+        <!-- To add a news item, duplicate one <article class="card card--news"> block above the placeholder -->
+        <div class="card-grid">
+          <article class="card card--news card--placeholder reveal">
+            <div class="card__image card__image--placeholder" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__date">Coming soon</p>
+              <h3 class="card__title">More updates on the way</h3>
+              <p class="card__summary">
+                Project news, campaign updates and preliminary findings will be posted
+                here as ThermoCeil progresses. Check back soon.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. PUBLICATIONS
+         ============================================================ -->
+    <section class="section publications" id="publications">
+      <div class="section__inner">
+        <p class="section__eyebrow">Outputs</p>
+        <h2 class="section__title">Publications</h2>
+
+        <!-- To add a publication, duplicate one <article class="pub-card"> block above the placeholder -->
+        <div class="pub-list">
+          <article class="pub-card pub-card--placeholder reveal">
+            <div class="pub-card__body">
+              <h3 class="pub-card__title">Publications will appear here</h3>
+              <p class="pub-card__meta">Journal articles, conference papers and open-access datasets will be listed as they become available.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. CONTACT
+         ============================================================ -->
+    <section class="section contact" id="contact">
+      <div class="section__inner">
+        <p class="section__eyebrow">Get in touch</p>
+        <h2 class="section__title">Contact</h2>
+
+        <div class="contact__grid">
+          <div class="contact__details">
+            <h3>Alejandro Jiménez Rios</h3>
+            <p>Lecturer in Structural Engineering<br>History, Conservation and Management Cluster Leader</p>
+            <p>Department of Architecture &amp; Civil Engineering<br>University of Bath, Bath, BA2 7AY, United Kingdom</p>
+            <p><a href="mailto:ajr225@bath.ac.uk">ajr225@bath.ac.uk</a></p>
+
+            <ul class="contact__social" aria-label="Professional profiles" role="list">
+              <li><a href="https://researchportal.bath.ac.uk/en/persons/alejandro-jimenez-rios" target="_blank" rel="noopener noreferrer">Research Portal<span class="visually-hidden"> (opens in new tab)</span></a></li>
+              <li><a href="https://orcid.org/" target="_blank" rel="noopener noreferrer">ORCID<span class="visually-hidden"> (opens in new tab)</span></a></li>
+              <li><a href="https://www.scopus.com/" target="_blank" rel="noopener noreferrer">Scopus<span class="visually-hidden"> (opens in new tab)</span></a></li>
+              <li><a href="https://www.webofscience.com/" target="_blank" rel="noopener noreferrer">Web of Science<span class="visually-hidden"> (opens in new tab)</span></a></li>
+              <li><a href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer">ResearchGate<span class="visually-hidden"> (opens in new tab)</span></a></li>
+              <li><a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar<span class="visually-hidden"> (opens in new tab)</span></a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in new tab)</span></a></li>
+            </ul>
+          </div>
+
+          <div class="contact__map-placeholder">
+            <span>University of Bath</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; <span id="year"></span> ThermoCeil — Alejandro Jiménez Rios, University of Bath.</p>
+      <p class="site-footer__funding">Access supported by the E-RIHS ERIC — European Research Infrastructure for Heritage Science.</p>
+      <a href="https://structural-conservation-eng.github.io/" class="site-footer__back">← Structural Conservation Engineering</a>
+    </div>
+  </footer>
+
+  <!-- Back to top button (populated/controlled by ThermoCeil.js) -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="ThermoCeil.js" defer></script>
+</body>
+</html>
